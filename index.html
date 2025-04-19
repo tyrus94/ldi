@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LDInteriors - Interior Design Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- GSAP for animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <link rel="icon" href="logo/ChatGPT Image Apr 17, 2025, 10_39_58 AM.png">
+    <meta name="google-site-verification" content="EsNSe8YbEAipmfe-SZ2pJ3MrLOqdn3NX9SVyA9TAo9M" />
+</head>
+<body>
+    <header class="hero">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logo/ChatGPT Image Apr 17, 2025, 10_39_58 AM.png" alt="LDInteriors Logo">
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#philosophy" class="nav-link">Philosophy</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide active">
+                    <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80" alt="Interior Design 1">
+                </div>
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80" alt="Interior Design 2">
+                </div>
+                <div class="slide">
+                    <img src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1920" alt="Interior Design 3">
+                </div>
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1600210492493-0946911123ea?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80" alt="Interior Design 4">
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-content">
+            <h1 class="title">LDinteriors</h1>
+            <p class="subtitle">PORTFOLIO 2025</p>
+            <p class="tagline">LIFE IS BETTER WITH MUSIC, DOGS & COFFEE</p>
+            <button class="cta-button">View Projects</button>
+        </div>
+
+        <div class="floating-shape">
+            <img src="https://images.unsplash.com/photo-1567016432779-094069958ea5?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Decorative Element">
+        </div>
+    </header>
+
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <div class="about-left">
+                <div class="portrait-container">
+                    <img src="profile/WhatsApp Image 2025-04-19 at 10.38.11_641b17d4.jpg" alt="Maureen Ngunjiri" class="portrait">
+                </div>
+            </div>
+            <div class="about-right">
+                <h2 class="about-name">Irungu Gichuki</h2>
+                <p class="about-bio">Mr. Irungu Gichuki has a keen eye for detail and a passion for creating spaces that are both functional and aesthetically pleasing. With over 10 years of experience in the interior design industry, she has developed a unique approach that combines contemporary trends with timeless elements, resulting in interiors that stand the test of time.</p>
+                
+                <div class="philosophy-container">
+                    <h3 class="philosophy-title">Design Philosophy</h3>
+                    <div class="philosophy-chips">
+                        <span class="chip">Color Theory</span>
+                        <span class="chip">Space Planning</span>
+                        <span class="chip">Material Selection</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="philosophy" class="philosophy-section">
+        <div class="philosophy-bg">
+            <svg class="bg-shapes" viewBox="0 0 1000 600" preserveAspectRatio="xMidYMid slice">
+                <circle class="shape shape-1" cx="150" cy="150" r="80" />
+                <circle class="shape shape-2" cx="850" cy="150" r="40" />
+                <circle class="shape shape-3" cx="500" cy="450" r="60" />
+                <line class="shape shape-4" x1="100" y1="300" x2="300" y2="100" />
+                <line class="shape shape-5" x1="700" y1="100" x2="900" y2="300" />
+                <line class="shape shape-6" x1="400" y1="350" x2="600" y2="550" />
+            </svg>
+        </div>
+        
+        <div class="philosophy-container">
+            <h2 class="philosophy-headline" id="philosophy-headline">Spaces That Tell Stories</h2>
+            
+            <div class="philosophy-cards">
+                <div class="philosophy-card" id="card-aesthetic">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" class="icon-svg">
+                            <path d="M7 14c-1.66 0-3 1.34-3 3 0 1.31-1.16 2-2 2 .92 1.22 2.49 2 4 2 2.21 0 4-1.79 4-4 0-1.66-1.34-3-3-3zm13.71-9.37l-1.34-1.34c-.39-.39-1.02-.39-1.41 0L9 12.25 11.75 15l8.96-8.96c.39-.39.39-1.02 0-1.41z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Aesthetic</h3>
+                    <p>Beauty is not superficial—it's essential. Our designs merge timeless elegance with contemporary trends to create visually stunning environments.</p>
+                </div>
+                
+                <div class="philosophy-card" id="card-functional">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" class="icon-svg">
+                            <path d="M22,7V5h-3V2h-2v3h-4V2h-2v3H7V2H5v3H2v2h3v4H2v2h3v4H2v2h3v3h2v-3h4v3h2v-3h4v3h2v-3h3v-2h-3v-4h3v-2h-3V7H22z M7,7h4v4 H7V7z M7,17v-4h4v4H7z M17,17h-4v-4h4V17z M17,11h-4V7h4V11z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Functional</h3>
+                    <p>Form follows function. We craft spaces that work seamlessly with your lifestyle, anticipating needs and enhancing daily experiences.</p>
+                </div>
+                
+                <div class="philosophy-card" id="card-personal">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" class="icon-svg">
+                            <path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Personal</h3>
+                    <p>Your space should tell your story. We integrate your personality, values, and experiences into every design decision to create meaningful interiors.</p>
+                </div>
+            </div>
+            
+            <div class="philosophy-quote">
+                <blockquote id="philosophy-quote-text">
+                    "Every space should reflect the people who use it."
+                </blockquote>
+                <cite>— Irungu Gichuki</cite>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="timeline-section">
+        <div class="container">
+            <h2 class="section-title">Our Journey</h2>
+            <p class="timeline-subtitle">Crafting exceptional spaces since 2015</p>
+            
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2015</div>
+                        <h3>Studio Founding</h3>
+                        <p>LDinteriors was established with a vision to transform living spaces into personalized sanctuaries that reflect the unique essence of each client.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2017</div>
+                        <h3>First Commercial Project</h3>
+                        <p>Completed our first major commercial design for The Artisan Café, setting the foundation for our distinctive approach to hospitality spaces.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2019</div>
+                        <h3>Design Excellence Award</h3>
+                        <p>Honored with the East African Design Excellence Award for our innovative approach to sustainable luxury in residential design.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2021</div>
+                        <h3>Studio Expansion</h3>
+                        <p>Expanded our team and opened a larger studio in Westlands to accommodate our growing client base and enhance our design capabilities.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2023</div>
+                        <h3>International Projects</h3>
+                        <p>Broadened our horizons with our first international projects in Tanzania and Uganda, bringing our distinctive East African design sensibility to new markets.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2025</div>
+                        <h3>The Future</h3>
+                        <p>Continuing to push boundaries in sustainable design while embracing new technologies that enhance both aesthetics and functionality in living spaces.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements-section">
+        <div class="achievements-container">
+            <h2 class="section-title">Our Achievements</h2>
+            <p class="achievements-subtitle">Recognition for excellence in design and innovation</p>
+            
+            <div class="achievements-grid">
+                <div class="achievement-item">
+                    <div class="achievement-icon">
+                        <svg viewBox="0 0 24 24" class="icon-svg">
+                            <path d="M20,2H4C2.89,2 2,2.89 2,4V20C2,21.11 2.89,22 4,22H20C21.11,22 22,21.11 22,20V4C22,2.89 21.11,2 20,2M12,19L5,12L7.12,9.88L12,14.76L16.88,9.88L19,12L12,19Z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>500+</h3>
+                        <p>Projects Completed</p>
+                    </div>
+                </div>
+                
+                <div class="achievement-item">
+                    <div class="achievement-icon">
+                        <svg viewBox="0 0 24 24" class="icon-svg">
+                            <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,8.39C13.57,9.4 15.42,10 17.42,10C18.2,10 18.95,9.91 19.67,9.74C19.88,10.45 20,11.21 20,12C20,16.41 16.41,20 12,20C9,20 6.39,18.34 5,15.89L6.61,14V16H13.92C14.09,15.28 14.5,14.68 15.07,14.21L12,12.53L7.31,10.14C7.13,9.5 7,8.86 7,8.17C7,7.94 7.03,7.71 7.07,7.5C9.05,8.35 10.93,9 13,9C13.5,9 14,8.96 14.5,8.89L11.88,7.08C12.63,7.08 13.37,7.03 14.09,6.92L15.33,7.95L15.5,7.92L16.31,8.69L16.93,8.3L17.46,8.68L17.42,9.15L18.31,9L19.67,9.74C17.82,11.15 15.33,11.88 12.31,11.89L9.74,9.92C9.71,10.54 9.77,11.28 10,12L12,13.54L13.57,13.56C13.24,13.95 13,14.43 13,14.97C13,16.1 13.9,17 15.03,17C15.74,17 16.36,16.65 16.71,16.14C17.25,16.29 17.76,16.5 18.24,16.78C16.93,18.04 15.07,19 13,19C12,19 11,19 10,18.53V15.96L8,17.18C7.2,15.73 7,14 7.24,12.38L6.33,11.68C6.13,12.33 6,13.16 6,14A6,6 0 0,0 12,20A6,6 0 0,0 18,14C18,11.72 16.94,9.77 15.28,8.67C15.72,8.19 16.28,7.83 16.94,7.64C18.19,9 19,11 19,13.13C19,13.44 18.94,14.03 18.86,14.38C19.26,13.44 19.5,12.43 19.5,11.35C19.5,7.5 16.42,4.5 12.5,4.5C10.92,4.5 9.43,4.95 8.2,5.73C8.07,5.97 8,6.21 8,6.5C8,7.05 8.45,7.5 9,7.5C9.24,7.5 9.47,7.43 9.66,7.29C10.5,6.77 11.47,6.5 12.5,6.5C15.3,6.5 17.6,8.7 17.6,11.5C17.6,12.25 17.42,12.97 17.1,13.6C17.1,13.57 17.1,13.53 17.1,13.5A2.5,2.5 0 0,0 14.6,11C13.4,11 12.44,11.89 12.13,13.03C11.5,12.7 10.97,12.21 10.6,11.6C10.85,10.31 11.23,9 13.03,8.32L12.5,7.67C9.36,8.17 8.11,10.08 7.85,12.03C7.42,10.7 7.5,9.31 8.03,8.03C5.2,9.65 5.28,12.89 5.28,12.89V13C5.28,13.04 5.28,13.07 5.29,13.1L7.28,11.81C7.92,13.85 9.35,15.16 11,16.04V17.83C7.42,17.29 4.67,14.39 4.67,10.87C4.67,10.41 4.73,9.97 4.83,9.54C2.54,12 2,14.45 2,16.87C2,17.2 2,17.5 2.06,18H2V18.87C2,19.33 2,19.77 2.12,20.2C5.3,20.8 6.67,17 9,17C10.2,17 10.17,18 11.89,18C13.5,18 14.09,17.4 14.57,16.84C16.5,16.84 19.14,15.15 20,12.31C20,12.31 20.17,9.83 17.89,8C17.89,8 16.5,7.75 15.61,8.53C15.24,8.35 14.83,8.23 14.4,8.16C14.27,8.14 14.12,8.12 14,8.1C13.76,8.04 13.5,8 13.28,8C12.53,7.92 11.77,8 11.5,8L12.28,8.53C12,8.53 11.72,8.53 11.5,8.56L9.81,7.56C9.39,7.5 9,7.47 8.61,7.47L11,9C8.81,9.3 8,10.15 7.64,11.07L14.32,16.07C14.89,15.44 15,14.75 14.96,14.04L16.95,14.78C16.88,15.04 16.88,15.28 16.88,15.58C15.5,17.12 14.04,17.83 11.72,17.83C8.33,17.83 7.61,19.83 5,19.83C5,19.83 8.92,22 13,22C17.66,22 20.96,18.13 20.96,13.53C21,8.07 16.56,3.5 10.96,4.17C13.39,3.53 16.66,3.92 18.5,5.5L18.5,5.5C18.5,5.5 17.39,1.5 12,2L12,2Z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>3</h3>
+                        <p>Industry Awards</p>
+                    </div>
+                </div>
+                
+                <div class="achievement-item">
+                    <div class="achievement-icon">
+                        <svg viewBox="0 0 24 24" class="icon-svg">
+                            <path d="M12,5.5A3.5,3.5 0 0,1 15.5,9A3.5,3.5 0 0,1 12,12.5A3.5,3.5 0 0,1 8.5,9A3.5,3.5 0 0,1 12,5.5M5,8C5.56,8 6.08,8.15 6.53,8.42C6.38,9.85 6.8,11.27 7.66,12.38C7.16,13.34 6.16,14 5,14A3,3 0 0,1 2,11A3,3 0 0,1 5,8M19,8A3,3 0 0,1 22,11A3,3 0 0,1 19,14C17.84,14 16.84,13.34 16.34,12.38C17.2,11.27 17.62,9.85 17.47,8.42C17.92,8.15 18.44,8 19,8M5.5,18.25C5.5,16.18 8.41,14.5 12,14.5C15.59,14.5 18.5,16.18 18.5,18.25V20H5.5V18.25M0,20V18.5C0,17.11 1.89,15.94 4.45,15.6C3.86,16.28 3.5,17.22 3.5,18.25V20H0M24,20H20.5V18.25C20.5,17.22 20.14,16.28 19.55,15.6C22.11,15.94 24,17.11 24,18.5V20Z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>100+</h3>
+                        <p>Happy Clients</p>
+                    </div>
+                </div>
+                
+                <div class="achievement-item">
+                    <div class="achievement-icon">
+                        <svg viewBox="0 0 24 24" class="icon-svg">
+                            <path d="M12,3L1,9L12,15L21,10.09V17H23V9M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18Z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>15+</h3>
+                        <p>Design Workshops</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="featured-achievement">
+                <div class="featured-achievement-image">
+                    <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Design Award">
+                    <div class="achievement-badge">
+                        <span>Featured</span>
+                    </div>
+                </div>
+                <div class="featured-achievement-content">
+                    <h3>East African Design Excellence Award</h3>
+                    <p class="achievement-year">2019</p>
+                    <p class="achievement-description">Recognized for our innovative approach to sustainable luxury, blending contemporary aesthetics with traditional East African elements in the landmark Kilimani Residence project. This prestigious award highlights our commitment to environmentally conscious design practices without compromising on elegance and comfort.</p>
+                    <a href="#" class="achievement-link">Read Feature</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <div class="projects-container">
+            <h2 class="section-title">Our Projects</h2>
+            
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="commercial">Commercial</button>
+                <button class="filter-btn" data-filter="residential">Residential</button>
+                <button class="filter-btn" data-filter="hospitality">Hospitality</button>
+                <button class="filter-btn" data-filter="healthcare">Healthcare</button>
+            </div>
+            
+            <div class="project-grid">
+                <div class="project-item commercial content-element" data-category="commercial">
+                    <a href="project-detail.html?id=la-bravo-restaurant">
+                        <img src="La bravo/44.jpg" alt="La Bravo Restaurant">
+                        <div class="project-info">
+                            <h3>La Bravo Restaurant</h3>
+                            <p>Commercial Design</p>
+                            <div class="view-details-btn">View Details</div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="project-item commercial content-element" data-category="commercial">
+                    <a href="project-detail.html?id=boba-tea-lounge">
+                        <img src="Boba/104.jpg" alt="Boba Tea Lounge">
+                        <div class="project-info">
+                            <h3>Boba Tea Lounge</h3>
+                            <p>Commercial Design</p>
+                            <div class="view-details-btn">View Details</div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="project-item healthcare content-element" data-category="healthcare">
+                    <a href="project-detail.html?id=3rd-park-hospital">
+                        <img src="3rd Park Hospital/6.jpg" alt="3rd Park Hospital">
+                        <div class="project-info">
+                            <h3>3rd Park Hospital</h3>
+                            <p>Healthcare Design</p>
+                            <div class="view-details-btn">View Details</div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="project-item residential content-element" data-category="residential">
+                    <a href="project-detail.html?id=kenyatta-rd-residence">
+                        <img src="Kenyatta road/79.jpg" alt="Kenyatta Rd Residence">
+                        <div class="project-info">
+                            <h3>Kenyatta Rd Residence</h3>
+                            <p>Residential Design</p>
+                            <div class="view-details-btn">View Details</div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="project-item residential content-element" data-category="residential">
+                    <a href="project-detail.html?id=kiambu">
+                        <img src="Kiambu/94.jpg" alt="Kiambu">
+                        <div class="project-info">
+                            <h3>Kiambu</h3>
+                            <p>Residential Design</p>
+                            <div class="view-details-btn">View Details</div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="project-item residential content-element" data-category="residential">
+                    <a href="project-detail.html?id=runda">
+                        <img src="Runda/101.jpg" alt="Runda">
+                        <div class="project-info">
+                            <h3>Runda</h3>
+                            <p>Residential Design</p>
+                            <div class="view-details-btn">View Details</div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="project-item commercial content-element" data-category="commercial">
+                    <a href="project-detail.html?id=pulsaris-designs">
+                        <img src="Pulssaris/69.jpg" alt="Pulsaris Designs">
+                        <div class="project-info">
+                            <h3>Pulsaris Designs</h3>
+                            <p>Commercial Design</p>
+                            <div class="view-details-btn">View Details</div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="project-item commercial content-element" data-category="commercial">
+                    <a href="project-detail.html?id=the-conclave">
+                        <img src="conclave/62.jpg" alt="The Conclave">
+                        <div class="project-info">
+                            <h3>The Conclave</h3>
+                            <p>Commercial Design</p>
+                            <div class="view-details-btn">View Details</div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="project-item hospitality content-element" data-category="hospitality">
+                    <a href="project-detail.html?id=kieni-get-away">
+                        <img src="Kieni/122.jpg" alt="Kieni Get-Away – Nyeri">
+                        <div class="project-info">
+                            <h3>Kieni Get-Away – Nyeri</h3>
+                            <p>Hospitality Design</p>
+                            <div class="view-details-btn">View Details</div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="project-item residential content-element" data-category="residential">
+                    <a href="project-detail.html?id=kikuyu-wc">
+                        <img src="Kikuyu Wc/27.jpg" alt="Kikuyu W/C">
+                        <div class="project-info">
+                            <h3>Kikuyu W/C</h3>
+                            <p>Residential Design</p>
+                            <div class="view-details-btn">View Details</div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="project-item residential content-element" data-category="residential">
+                    <a href="project-detail.html?id=membley-kitchen">
+                        <img src="Membley kitchen/73.jpg" alt="Membley Kitchen">
+                        <div class="project-info">
+                            <h3>Membley Kitchen</h3>
+                            <p>Residential Design</p>
+                            <div class="view-details-btn">View Details</div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="project-item commercial content-element" data-category="commercial">
+                    <a href="project-detail.html?id=renders">
+                        <img src="Renders/31.jpg" alt="Renders">
+                        <div class="project-info">
+                            <h3>Renders</h3>
+                            <p>Commercial Design</p>
+                            <div class="view-details-btn">View Details</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <h2 class="section-title">Get In Touch</h2>
+            
+            <div class="contact-content">
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <form id="contactForm" action="https://formspree.io/f/irunguinteriors@gmail.com" method="POST">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder=" " required>
+                            <label for="name" class="form-label">Your Name</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder=" " required>
+                            <label for="email" class="form-label">Your Email</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" placeholder=" " required></textarea>
+                            <label for="message" class="form-label">Your Message</label>
+                        </div>
+                        
+                        <button type="submit" class="send-btn">Send Message</button>
+                    </form>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <a href="tel:0705757661">
+                                <svg class="phone-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="info-text">
+                            <h3>Phone</h3>
+                            <p><a href="tel:0705757661" class="call-link">0705757661</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24" class="icon-svg">
+                                <path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z" fill="currentColor"/>
+                            </svg> 
+                        </div>
+                        <div class="info-text">
+                            <h3>Email</h3>
+                            <p><a href="mailto:irunguinteriors@gmail.com">irunguinteriors@gmail.com</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24" class="icon-svg">
+                                <path d="M12,2.04C6.5,2.04 2,6.53 2,12.06C2,17.06 5.66,21.21 10.44,21.96V14.96H7.9V12.06H10.44V9.85C10.44,7.34 11.93,5.96 14.22,5.96C15.31,5.96 16.45,6.15 16.45,6.15V8.62H15.19C13.95,8.62 13.56,9.39 13.56,10.18V12.06H16.34L15.89,14.96H13.56V21.96A10,10 0 0,0 22,12.06C22,6.53 17.5,2.04 12,2.04Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="info-text">
+                            <h3>Facebook</h3>
+                            <p><a href="https://www.facebook.com/share/1FRzQ2nvk7/" target="_blank">LDInteriors</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="map-placeholder">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63820.85316977898!2d36.75853665238606!3d-1.3028617178957924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f11d7f9b360c7%3A0x9df03b767ccf2cd5!2sWestlands%2C%20Nairobi%2C%20Kenya!5e0!3m2!1sen!2sus!4v1682489925544!5m2!1sen!2sus" width="100%" height="250" style="border:0; border-radius:10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="logo/ChatGPT Image Apr 17, 2025, 10_39_58 AM.png" alt="LDInteriors Logo">
+            </div>
+            <p class="footer-text">Creating beautiful spaces that tell your story.</p>
+            <div class="footer-links">
+                <a href="#" class="footer-link">Home</a>
+                <a href="#about" class="footer-link">About</a>
+                <a href="#projects" class="footer-link">Projects</a>
+                <a href="#philosophy" class="footer-link">Philosophy</a>
+                <a href="#contact" class="footer-link">Contact</a>
+            </div>
+            <p class="copyright">&copy; 2025 LDInteriors. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="sticky-contact">
+        <div class="sticky-toggle">
+            <svg viewBox="0 0 24 24" class="toggle-icon">
+                <path d="M20,2H4C2.9,2 2,2.9 2,4V22L6,18H20C21.1,18 22,17.1 22,16V4C22,2.9 21.1,2 20,2M20,16H5.2L4,17.2V4H20V16Z" fill="currentColor"/>
+            </svg>
+        </div>
+        <div class="sticky-menu">
+            <a href="https://wa.me/0705757661" class="sticky-item whatsapp" target="_blank">
+                <svg viewBox="0 0 24 24" class="sticky-icon">
+                    <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7 8.5 7,9.71C7,10.93 7.89 12.1 8,12.27C8.14 12.44 9.76 14.94 12.25 16C12.84 16.27 13.3 16.42 13.66 16.53C14.25 16.72 14.79 16.69 15.22 16.63C15.7 16.56 16.68 16.03 16.89 15.45C17.1 14.87 17.1 14.38 17.04 14.27C16.97 14.17 16.81 14.11 16.56 14C16.31 13.86 15.09 13.26 14.87 13.18C14.64 13.1 14.5 13.06 14.31 13.3C14.15 13.55 13.67 14.11 13.53 14.27C13.38 14.44 13.24 14.46 13 14.34C12.74 14.21 11.94 13.95 11 13.11C10.26 12.45 9.77 11.64 9.62 11.39C9.5 11.15 9.61 11 9.73 10.89C9.84 10.78 10 10.6 10.1 10.45C10.23 10.31 10.27 10.2 10.35 10.04C10.43 9.87 10.39 9.73 10.33 9.61C10.27 9.5 9.77 8.26 9.56 7.77C9.36 7.29 9.16 7.35 9 7.34C8.86 7.34 8.7 7.33 8.53 7.33Z" fill="currentColor"/>
+                </svg>
+                <span class="sticky-label">WhatsApp</span>
+            </a>
+            <a href="tel:0705757661" class="sticky-item phone" aria-label="Call us at 0705757661">
+                <svg viewBox="0 0 24 24" class="sticky-icon">
+                    <path d="M20,15.5C18.8,15.5 17.5,15.3 16.4,14.9C16.3,14.9 16.2,14.9 16.1,14.9C15.8,14.9 15.6,15 15.4,15.2L13.2,17.4C10.4,15.9 8,13.6 6.6,10.8L8.8,8.6C9.1,8.3 9.2,7.9 9,7.6C8.7,6.5 8.5,5.2 8.5,4C8.5,3.5 8,3 7.5,3H4C3.5,3 3,3.5 3,4C3,13.4 10.6,21 20,21C20.5,21 21,20.5 21,20V16.5C21,16 20.5,15.5 20,15.5M5,5H6.5C6.6,5.9 6.8,6.8 7,7.6L5.8,8.8C5.4,7.6 5.1,6.3 5,5M19,19C17.7,18.9 16.4,18.6 15.2,18.2L16.4,17C17.2,17.2 18.1,17.4 19,17.4V19Z" fill="currentColor"/>
+                </svg>
+                <span class="sticky-label">Call</span>
+            </a>
+            <a href="https://maps.google.com/?q=Westlands,Nairobi,Kenya" class="sticky-item map" target="_blank">
+                <svg viewBox="0 0 24 24" class="sticky-icon">
+                    <path d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z" fill="currentColor"/>
+                </svg>
+                <span class="sticky-label">Map</span>
+            </a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <script src="app.js"></script>
+    
+    <script>
+        // Timeline items fade-in animation
+        function animateTimelineItems() {
+            const timelineItems = document.querySelectorAll('.timeline-item');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-in');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.2,
+                rootMargin: '0px 0px -100px 0px'
+            });
+            
+            timelineItems.forEach(item => {
+                observer.observe(item);
+            });
+        }
+        
+        // Achievement items animation
+        function animateAchievementItems() {
+            const achievementItems = document.querySelectorAll('.achievement-item, .featured-achievement');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        // Items are already set to animate via CSS, just make sure they're visible
+                        entry.target.style.visibility = 'visible';
+                        observer.unobserve(entry.target);
+                        
+                        // If this is an achievement item with a number, animate it
+                        if (entry.target.classList.contains('achievement-item')) {
+                            const numberElement = entry.target.querySelector('.achievement-content h3');
+                            if (numberElement) {
+                                const targetNumber = numberElement.textContent;
+                                animateNumber(numberElement, targetNumber);
+                            }
+                        }
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            });
+            
+            achievementItems.forEach(item => {
+                observer.observe(item);
+            });
+        }
+        
+        // Number animation function
+        function animateNumber(element, targetValue) {
+            // Remove any non-numeric characters like '+' or '%'
+            const numericValue = parseInt(targetValue.replace(/\D/g, ''));
+            
+            // Set starting point
+            element.textContent = "0";
+            
+            // Calculate animation duration based on the size of the number
+            const animationDuration = Math.min(2000, Math.max(1000, numericValue * 5));
+            
+            // Calculate increment step
+            const incrementStep = numericValue / (animationDuration / 16);
+            
+            let currentValue = 0;
+            const startTime = performance.now();
+            
+            function updateNumber(timestamp) {
+                const elapsed = timestamp - startTime;
+                
+                if (elapsed < animationDuration) {
+                    // Use easeOutQuad easing function for a natural slowing down effect
+                    const progress = 1 - Math.pow(1 - elapsed / animationDuration, 2);
+                    currentValue = Math.floor(progress * numericValue);
+                    
+                    // Format the number with appropriate suffix
+                    let formattedValue = currentValue.toString();
+                    if (targetValue.includes('+')) {
+                        formattedValue += '+';
+                    }
+                    if (targetValue.includes('%')) {
+                        formattedValue += '%';
+                    }
+                    
+                    element.textContent = formattedValue;
+                    requestAnimationFrame(updateNumber);
+                } else {
+                    // Ensure the final value is exactly the target
+                    element.textContent = targetValue;
+                }
+            }
+            
+            requestAnimationFrame(updateNumber);
+        }
+        
+        // Initialize animations when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            animateTimelineItems();
+            animateAchievementItems();
+        });
+
+        window.addEventListener("DOMContentLoaded", () => {
+            const items = document.querySelectorAll(".project-item");
+            items.forEach((item, index) => {
+              setTimeout(() => {
+                item.classList.add("animate");
+              }, index * 100);
+            });
+        });
+
+        // Optional: If you're filtering projects, re-trigger animation
+        const filterButtons = document.querySelectorAll(".filter-btn");
+
+        filterButtons.forEach((btn) => {
+            btn.addEventListener("click", () => {
+              const filter = btn.dataset.filter;
+              const items = document.querySelectorAll(".project-item");
+
+              items.forEach((item, index) => {
+                // Reset animation
+                item.classList.remove("animate");
+                const match = filter === "all" || item.dataset.category === filter;
+                item.style.display = match ? "block" : "none";
+
+                if (match) {
+                  setTimeout(() => {
+                    item.classList.add("animate");
+                  }, index * 100);
+                }
+              });
+            });
+        });
+    </script>
+</body>
+</html> 
